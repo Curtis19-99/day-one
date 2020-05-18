@@ -9,8 +9,8 @@ public class TemperatureConversion {
       System.out.println("Celsius " + c + " = " + convertC2F(c) + " Fahrenheit");
       System.out.println("Fahrenheit " + f + " = " + convertF2C(f) + " Celsius");
     } else {
-      for (String arg : args) {
-        double c = Double.parseDouble(arg);
+      for (int i = 0; i < args.length; i++) {
+        double c = Double.parseDouble(args[i]);
         System.out.println("Celsius " + c + " = " + convertC2F(c) + " Fahrenheit");
       }
     }
